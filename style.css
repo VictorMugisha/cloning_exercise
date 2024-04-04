@@ -143,3 +143,95 @@ p, li, input, button, i {
     border-radius: 100px;
 }
 
+/* ------ SUGGESTIONS ------- */
+.suggestions {
+    position: relative;
+    width: calc(100% - 5rem);
+    margin: 3rem 2.5rem;
+}
+.suggestions h2 {
+    font-weight: 500;
+    padding: 10px 0;
+}
+.suggestions .destinations {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    gap: 1rem;
+    padding-bottom: 1rem;
+    overflow-x: scroll;
+}
+.suggestions .destination::-webkit-scrollbar {
+    display: none;
+}
+.suggestions .destinations .destination {
+    position: relative;
+    width: 260px;
+    height: 180px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 15px;
+}
+.suggestions .destinations .destination img {
+    position: relative;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.suggestions .destinations .destination div {
+    position: absolute;
+    bottom: 6px;
+    height: 25%;
+    width: 100%;
+    background: white;
+}
+.suggestions .destinations .destination div p {
+    font-weight: 500;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+/* -------- ACCOMODATION --------- */
+.accomodation-section {
+    position: relative;
+    width: calc(100% - 5rem);
+    margin: 3rem 2.5rem;
+}
+.accomodation-section h2 {
+    font-weight: 500;
+    font-size: 35px;
+    padding: 10px 0;
+}
+.accomodation-section .accomodations {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 1rem;
+    padding-bottom: 1rem;
+    overflow-x: scroll;
+}
+.accomodation-section .accomodations .accomodation {
+    position: relative;
+    width: 270px;
+    height: 210px;
+    border-radius: 15px;
+}
+.accomodation-section .accomodations .accomodation img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.accomodation-section .accomodations .accomodation div {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.277);
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+}
+.accomodation-section .accomodations .accomodation div p {
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+}
