@@ -161,7 +161,7 @@ p, li, input, button, i {
     padding-bottom: 1rem;
     overflow-x: scroll;
 }
-.suggestions .destination::-webkit-scrollbar {
+.suggestions .destinations::-webkit-scrollbar {
     display: none;
 }
 .suggestions .destinations .destination {
@@ -209,6 +209,9 @@ p, li, input, button, i {
     padding-bottom: 1rem;
     overflow-x: scroll;
 }
+.accomodation-section .accomodations::-webkit-scrollbar {
+    display: none;
+}
 .accomodation-section .accomodations .accomodation {
     position: relative;
     width: 270px;
@@ -234,4 +237,127 @@ p, li, input, button, i {
     color: white;
     font-weight: 600;
     font-size: 17px;
+}
+
+
+/* ---------- HOLIDAY HOME ------------ */
+.holiday-home {
+    position: relative;
+    width: calc(100% - 5rem);
+    height: 85vh;
+    margin: 1rem 2.5rem;
+    background-image: url("./images/holiday-home.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.holiday-home .holiday-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.395);
+    color: #fff;
+    border-radius: 20px;    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.holiday-home .holiday-content .holiday-text {
+    width: 30%;
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.holiday-home .holiday-content .holiday-text h1 {
+    font-size: 40px;
+}
+.holiday-home .holiday-content .holiday-text p {
+    font-size: 14px;
+}
+.holiday-home .holiday-content .holiday-text button {
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #fff;
+    background: rgb(42, 1, 42);
+    transition: .1s;
+    cursor: pointer;
+}
+.holiday-home .holiday-content .holiday-text button:hover {
+    background: rgb(92, 84, 92);
+}
+
+/* -------- GET INSPIRED --------- */
+.get-inspired {
+    position: relative;
+    width: calc(100% - 5rem);
+    margin: 3rem 2.5rem;
+}
+.get-inspired h2 {
+    font-weight: 500;
+    font-size: 35px;
+    padding: 10px 0;
+}
+.get-inspired .inspirations {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+} 
+.get-inspired .inspirations .upper {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+.get-inspired .inspirations .lower {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+.get-inspired .inspirations .inspiration {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: .3rem;
+}
+.get-inspired .inspirations .upper .inspiration img,
+.get-inspired .inspirations .lower .inspiration img {
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.get-inspired .inspirations .upper .inspiration img {
+    height: 320px;
+}
+.get-inspired .inspirations .lower .inspiration img {
+    height: 230px;
+}
+.get-inspired .inspirations .inspiration p {
+    padding-top: .5rem;
+    text-transform: uppercase;
+}
+.get-inspired .inspirations .inspiration h6 {
+    font-size: 14px;
 }
