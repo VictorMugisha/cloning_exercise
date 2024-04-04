@@ -86,7 +86,8 @@ p, li, input, button, i {
 }
 .banner .banner-text-section .banner-text {
     position: relative;
-    width: 80%;
+    width: calc(100% - 5rem);
+    margin: 0 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -360,4 +361,142 @@ p, li, input, button, i {
 }
 .get-inspired .inspirations .inspiration h6 {
     font-size: 14px;
+}
+
+
+/* ------ BENEFITS --------- */
+.benefits-section {
+    position: relative;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 10px;
+}
+.benefits-section .benefit {
+    position: relative;
+    display: grid;
+    grid-template-rows: 55px 30px 45px;
+}
+.benefits-section .benefit i {
+    font-size: 40px;
+}
+.benefits-section .benefit h3 {
+    font-size: 14px;
+}
+
+
+
+.advertise {
+    position: relative;
+    width: calc(100% - 5rem);
+    height: 90vh;
+    margin: 1rem 2.5rem;
+    background-image: url("./images/advertise.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.advertise .advertise-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.395);
+    color: #fff;
+    border-radius: 20px;    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.advertise .advertise-content .advertise-text {
+    width: 30%;
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.advertise .advertise-content .advertise-text h1 {
+    font-size: 30px;
+}
+.advertise .advertise-content .advertise-text p {
+    font-size: 14px;
+}
+.advertise .advertise-content .advertise-text button {
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #fff;
+    background: rgb(42, 1, 42);
+    transition: .1s;
+    cursor: pointer;
+}
+.advertise .advertise-content .advertise-text button:hover {
+    background: rgb(92, 84, 92);
+}
+
+/* ------ ABOUT SECTION ------ */
+.about {
+    position: relative;
+    width: calc(100% - 5rem);
+    margin: 2rem 2.5rem;
+}
+.about article {
+    padding-top: 10px;
+}
+.about article h2 {
+    padding: 1rem 0;
+    font-size: 27px;
+    font-weight: 500;
+}
+.about article p {
+    font-size: 14px;
+}
+
+
+/* ------- FAQ ------- */
+.faq-container {
+    position: relative;
+    width: calc(100% - 5rem);
+    margin: 3rem 2.5rem;
+}
+.faq-container h2 {
+    font-weight: 500;
+    font-size: 35px;
+    padding-bottom: 15px;
+    text-transform: capitalize;
+}
+.faq-container .faq-item {
+    padding-bottom: 10px;
+}
+.faq-container .faq-item .faq-question {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px;
+    cursor: pointer;
+}
+.faq-container .faq-item .faq-question h3 {
+    font-weight: 400;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.faq-container .faq-item .faq-question i {
+    font-size: 30px;
+    cursor: pointer;
+}
+.faq-item .faq-answer {
+    padding: 0 10px;
+    font-size: 14px;
+    display: none;
 }
