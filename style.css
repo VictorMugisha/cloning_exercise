@@ -85,7 +85,6 @@ p, li, input, button, i {
     background: rgba(0, 0, 0, 0.454);
 }
 .banner .banner-text-section .banner-text {
-    position: relative;
     width: calc(100% - 5rem);
     margin: 0 2.5rem;
     display: flex;
@@ -95,8 +94,9 @@ p, li, input, button, i {
     gap: 10px;
 }
 .banner .banner-text-section .banner-text .bar {
-    position: relative;
+    /* position: relative; */
     width: 100%;
+    top: 0;
 }
 .banner .banner-text-section .banner-text h1 {
     color: white;
