@@ -490,13 +490,49 @@ p, li, input, button, i {
     font-weight: 400;
     cursor: pointer;
     text-transform: capitalize;
+    font-size: 25px;
+    color: black;
 }
 .faq-container .faq-item .faq-question i {
     font-size: 30px;
     cursor: pointer;
+    color: black;
+}
+.faq-container .faq-item .faq-question i.uil-angle-up {
+    display: none;
 }
 .faq-item .faq-answer {
     padding: 0 10px;
     font-size: 14px;
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 500ms;
+}
+
+.faq-container .faq-item:target .faq-answer {
+    max-height: 20rem;
+}
+.faq-container .faq-item:target .faq-question i.uil-angle-up {
+    display: block;
+}
+.faq-container .faq-item:target .faq-question i.uil-angle-down {
     display: none;
+}
+
+.faq-container .faq-item .faq-answer .links-section {
+    position: relative;
+    padding: 1rem .3rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    border-top: 1px solid rgba(0, 0, 255, 0.322);
+}
+.faq-container .faq-item .faq-answer .links-section ul li a {
+    padding: 1rem 0;
+    font-weight: 300;
+    font-size: 13px;
 }
