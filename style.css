@@ -531,8 +531,74 @@ p, li, input, button, i {
     gap: 2rem;
     border-top: 1px solid rgba(0, 0, 255, 0.322);
 }
+.faq-container .faq-item .faq-answer .links-section ul,
+.faq-container .faq-item .faq-answer .links-section ul li  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
 .faq-container .faq-item .faq-answer .links-section ul li a {
-    padding: 1rem 0;
+    padding: .2rem 0;
     font-weight: 300;
+    font-size: 12px;
+    transition: .2s;
+    color: rgb(105, 105, 224);
+}
+.faq-container .faq-item .faq-answer .links-section ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* ----------- FOOTER ---------- */
+footer {
+    position: relative;
+    width: calc(100% - 5rem);
+    padding: 2rem 0;
+    margin: 0 2.5rem 0;
+}
+footer img {
+    position: relative;
+    margin-bottom: 1rem;
+    width: 120px;
+}
+footer .footer {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap: 2rem;
+    padding-bottom: 2rem;
+}
+footer .footer h3 {
+    font-weight: 500;
+    padding-bottom: 1rem;
     font-size: 13px;
+}
+footer .footer article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: .4rem;
+}
+footer .footer article a {
+    font-size: 11px;
+    font-weight: 200;
+    padding: .3rem 0;
+    transition: .2s;
+    color: rgb(105, 105, 224);
+}
+footer .footer article a:hover {
+    text-decoration: underline;
+}
+footer .copyright {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.089);
+    padding-top: 1.5rem;
+}
+footer .copyright p {
+    font-size: 11px;
+    font-weight: 300;
 }
